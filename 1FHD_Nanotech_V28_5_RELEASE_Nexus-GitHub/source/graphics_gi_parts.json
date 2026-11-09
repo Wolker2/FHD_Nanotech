@@ -5,23 +5,38 @@
   "parts": [
     {
       "file": "000.part",
-      "size": 1600000,
-      "sha256": "a857857f2f8ca5972645acc2c4d23702fe01cfe2535255d74ead59238313117b"
+      "size": 850000,
+      "sha256": "00798fa1572576bb3f514f930ac75dd6157f22a8441f4215c6fccbbe07163d46"
     },
     {
       "file": "001.part",
-      "size": 1600000,
-      "sha256": "351d7b62c09508f9680b29e1a12b222f987a6e87bcefceed138b90bc9f97b4d5"
+      "size": 850000,
+      "sha256": "0bcea8288b4c60bf0ad1b7d9e15aca33c5238bcedff90925754ef098b937eccd"
     },
     {
       "file": "002.part",
-      "size": 1600000,
-      "sha256": "53e0bb71c83053f3ebfec0b1f7545bc744d776083e38802a1fd9eb00b1bd5383"
+      "size": 850000,
+      "sha256": "188af832761ec03c23e92431a49d3ca661cdbd4cf8f131b542a8315536b21df7"
     },
     {
       "file": "003.part",
-      "size": 801488,
-      "sha256": "aeb16590f75695ae78ee08bb95785b80f76932402a9b891e106718d70c026081"
+      "size": 850000,
+      "sha256": "5d40373ef0bd44b4a0c96461d7746d799343fb07d657b68e9ddde52b52ab163a"
+    },
+    {
+      "file": "004.part",
+      "size": 850000,
+      "sha256": "fc2c18d82d4dbacd5e1564937466fd3dc1fde275a6d413c735cf59818590a426"
+    },
+    {
+      "file": "005.part",
+      "size": 850000,
+      "sha256": "dc16bf654f878c6673c97bd4a8ec15669dcb762b9e5630be41f9e6ba34dee10e"
+    },
+    {
+      "file": "006.part",
+      "size": 501488,
+      "sha256": "ba428e20119cddbadc13207c957bc2bdf0f99247e191a4f75384150035b154a1"
     }
   ]
 }
