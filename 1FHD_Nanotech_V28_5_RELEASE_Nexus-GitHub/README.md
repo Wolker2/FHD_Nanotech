@@ -1,0 +1,28 @@
+# FHD Nanotech V28.5 RELEASE — Nexus-GitHub
+
+**Новая версия; исторические V25/V26/V28.7 не заменяются.** Исходный файл называется `FHD_Nanotech_V28_5_RELEASE.zip`, но фактически это **RAR5** (магия RAR5). Содержит оба модуля:
+
+- `Mods/FHD_MODS/FHD_Nanotech` (410 файлов), версия `v0.3 Alpha RELEASE V28.5 NATIVE SLOTS`, требуется `ExtraArtSlots` по ModuleInfo;
+- `Mods/FHD_MODS/FHD_Nanogenesis` (116 файлов), зависимость от `FHD_Nanotech`.
+
+### Что сохранено
+
+- **Оригинальный готовый мод:** 101662324 байт, SHA-256 `dbebe2a4b1fb6243aa3c646f3b287d7cdf547bf8c97f67761a5d337e838a1029`. Полный оригинальный RAR сохранён по [ссылке Google Drive](https://drive.google.com/file/d/1LVhRcI6ir5BhVEaA1BX0ZVJwSIO87jEe/view) — из-за ограничения загрузки крупных бинарных файлов через коннектор GitHub. Скачайте его в `install/FHD_Nanotech_V28_5_RELEASE.rar` (несмотря на имя, это RAR5). Сборщик проверяет размер и SHA-256, мод не меняется.
+- **Исходники:** 6 конфигураций DAT в редактируемом JSON (
+  `source/FHD_Nanotech/CFG/`, `source/FHD_Nanogenesis/CFG/`);
+  435 изображений GI в редактируемом JSON ([полный ZIP исходников графики на Google Drive](https://drive.google.com/file/d/1fslx_DV4PHBQW4HazjgeUAqczD1zJhD1/view); скачайте как `source/graphics_gi_JSON.zip`);
+  оба оригинальных `ModuleInfo.txt` (UTF-16 LE), кодеки `scripts/dat_codec.py`, `scripts/gi_codec.py` и скрипт сборки.
+- **Оригинальные анимационные ресурсы:** 51 GAI и 32 HAI сохранены **без изменения** внутри оригинального RAR. Исходные графические проекты/слои редактора для них не предоставлены — не заявляем, что они восстановлены.
+- `runtime-manifest.json` — 526 игровых файлов, точный SHA-256 каждого; `build-verification.json` — результаты проверки исходников.
+
+### Как восстановить и пересобрать
+
+1. Скачайте оригинальный RAR и ZIP редактируемой графики по ссылкам выше, положите в `install/` и `source/`. `python scripts/restore_original.py` проверяет SHA-256 оригинального RAR; если имеются отдельные части архива, умеет соединить их. Исходный RAR содержит готовые модули в `Mods/FHD_MODS`.
+2. `python scripts/build.py --verify-original` — восстанавливает оба модуля, пересобирает DAT и GI по JSON, сверяет **все 526 файлов** с присланным оригиналом и создаёт **настоящий ZIP** `dist/FHD_Nanotech_V28_5_RELEASE_INSTALL.zip`.
+3. Для изменения баланса редактируйте `source/.../CFG/*.dat.json`; для графики — соответствующий файл `.gi.json` из `source/graphics_gi_parts/*.part` (сборщик восстанавливает точный ZIP с JSON), после чего обновите `source/graphics_gi_JSON.zip` и запускайте `python scripts/build.py` без `--verify-original`.
+
+Сборка на Linux использует системную `libarchive` для распаковки RAR5. На Windows для работы **сборщика исходников**, но не игры, требуется 7-Zip (команда `7z`). Никаких игровых DLL/SOL-хуков/EXE-привязок здесь не добавлялось. Исходный мод не изменён.
+
+**Статус:** RELEASE как в исходном архиве. Побайтовая сборка не является проверкой появления корпусов, сохранений, штатного поиска и производительности в игре — запуск игры не проводился.
+
+Полные бинарные архивы хранятся по двум ссылкам на Google Drive, так как интерфейс GitHub не принял их целиком. На GitHub публикуются компактные редактируемые DAT и скрипты; обе ссылки являются частью этой новой версии. **Старые версии в GitHub не изменяются.**

@@ -1,0 +1,27 @@
+{
+  "file": "source/graphics_gi_JSON.zip",
+  "size": 5601488,
+  "sha256": "655b9910d3f3502b7125362011ff52bf2ff2a5020220232fdda783c93fb29bde",
+  "parts": [
+    {
+      "file": "000.part",
+      "size": 1600000,
+      "sha256": "a857857f2f8ca5972645acc2c4d23702fe01cfe2535255d74ead59238313117b"
+    },
+    {
+      "file": "001.part",
+      "size": 1600000,
+      "sha256": "351d7b62c09508f9680b29e1a12b222f987a6e87bcefceed138b90bc9f97b4d5"
+    },
+    {
+      "file": "002.part",
+      "size": 1600000,
+      "sha256": "53e0bb71c83053f3ebfec0b1f7545bc744d776083e38802a1fd9eb00b1bd5383"
+    },
+    {
+      "file": "003.part",
+      "size": 801488,
+      "sha256": "aeb16590f75695ae78ee08bb95785b80f76932402a9b891e106718d70c026081"
+    }
+  ]
+}

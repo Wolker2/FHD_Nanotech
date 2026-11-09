@@ -1,0 +1,15 @@
+{
+  "archive_provenance": "FHD_Nanotech_V28_5_RELEASE.zip uploaded by user; file magic RAR5 despite .zip extension",
+  "archive_size": 101662324,
+  "archive_sha256": "dbebe2a4b1fb6243aa3c646f3b287d7cdf547bf8c97f67761a5d337e838a1029",
+  "runtime_files": 526,
+  "source_reconstructed_DAT_GI": 441,
+  "exact_roundtrip_DAT_GI": true,
+  "skipped_graphics_animation": 83,
+  "original_assets_to_preserve": [
+    ".gai",
+    ".hai"
+  ],
+  "live_game_tested": false,
+  "timestamp_utc": "2026-11-09T17:28:35.447049+00:00"
+}
